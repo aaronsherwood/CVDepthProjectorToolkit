@@ -86,7 +86,7 @@ The app will detect if you have the depth camera plugged in or not. If not, it w
 <br/>
 <br/>
 
-4. Click *Learn Background* in the GUI menu to analyze the depth and set per point depth thresholds.
+4. Click the *Learn Background* button in the GUI menu to analyze the depth and set per point depth thresholds.
 
 <img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" width="1000" />
 <br/>
