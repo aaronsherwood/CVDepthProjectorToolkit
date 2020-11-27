@@ -80,13 +80,13 @@ The app will detect if you have the depth camera plugged in or not. If not, it w
 <br/>
 <br/>
 
-3. Then set the homography rectangle to match your projection space in the pointcloud view. This saure is mapped, with the screen's aspect ratio, to the sqaure to the right, with blurring and thresholding, etc. done with OPENCV.
+3. Then set the homography rectangle to match your projection space in the pointcloud view. This square is mapped, with the screen's aspect ratio, to the square to the right, with blurring and thresholding, etc.
 
 <img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" width="800" />
 <br/>
 <br/>
 
-4. Click *Learn Background* in the GUI memory to analyze the depth and set per point depth thresholds.
+4. Click *Learn Background* in the GUI menu to analyze the depth and set per point depth thresholds.
 
 <img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" width="800" />
 <br/>
