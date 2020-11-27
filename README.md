@@ -62,7 +62,7 @@ This has been tested with the following setup:
 - Astra SDK 0.5.0 (which is included, no separate download/installation is required)
 - Orbbec Astra camera
 
-## How To
+## How-to
 The app will detect if you have the depth camera plugged in or not. If not, it will let you play with the visuals using the mouse. If it detects an Orbbec camera you will see something similar to the following. Counter clock wise from the bottom right we have the webcam image, the pointcloud image, the cleaned/treated image from the pointcloud, and the opticalflow texture from the GPU.
 
 ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/overviewcrop.png)
