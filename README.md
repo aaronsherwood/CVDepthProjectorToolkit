@@ -8,7 +8,7 @@ This project pulls together many helpful tools for tracking people with a depth 
 * Cinder
 * Orbbec Astra depth cam
 * Virtual placement of depth cam in room via pointcloud rotation
-* Unique, per point, thresholds to allow for dynamic background subtraction
+* Unique, per point, thresholds to allow for dynamic background subtraction on GPU
 * Homography via OPENCV to match a section of the point cloud to the projected area
 * GPU calculated optical flow
 * Transform feedback particles with optical flow
