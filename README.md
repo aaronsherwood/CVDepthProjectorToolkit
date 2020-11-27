@@ -5,7 +5,7 @@ This project pulls together many helpful tools for tracking people with a depth 
 ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/michi.jpg)
 
 ## Quick Functionality Overview
-* Cinder
+* Built with Cinder
 * Orbbec Astra depth cam
 * Virtual placement of depth cam in room via pointcloud rotation
 * Unique, per point, thresholds to allow for dynamic background subtraction on GPU
