@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BE61CB0DC0BC4DA53E3707A3EDFF72188342D070",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1A60224E29B701B9306C9116236BB22F44C8D31B" : 9223372036854775807,
+    "BE61CB0DC0BC4DA53E3707A3EDFF72188342D070" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B363613A-D948-45A3-822E-7B3C2459F7BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1A60224E29B701B9306C9116236BB22F44C8D31B" : "michiPerformance\/mandalaPerformance\/src\/realSense\/",
+    "BE61CB0DC0BC4DA53E3707A3EDFF72188342D070" : "michiPerformance\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mandalaPerformance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mandalaPerformance\/xcode\/mandalaPerformance.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aaronsherwood\/ofxRSSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A60224E29B701B9306C9116236BB22F44C8D31B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aaronsherwood\/michiPerformance.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE61CB0DC0BC4DA53E3707A3EDFF72188342D070"
+    }
+  ]
+}
