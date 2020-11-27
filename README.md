@@ -92,13 +92,7 @@ The app will detect if you have the depth camera plugged in or not. If not, it w
 <br/>
 <br/>
 
-5. The optical flow is shown in the bottom left.
-
-![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/flow.gif)
-<br/>
-<br/>
-
-6. Turn off debug mode and the optical flow will move the particles around.
+5. Turn off debug mode and the optical flow will move the particles around.
 
 ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/bubbles.gif)
 <br/>
