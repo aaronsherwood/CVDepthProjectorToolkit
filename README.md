@@ -16,7 +16,7 @@ This project pulls together many helpful tools for tracking people with a depth 
 
 ### More Info
 
-A pointcloud from an Orbbec Astra is rotated to get the viewing angle needed to track, allowing the camera to be placed anywhere in a room (inspired by Kyle McDonald's [ofxVirtualkinect](https://github.com/kylemcdonald/ofxVirtualKinect)). A novel approach of getting unique thresholds for every pointcloud point allows a dynamic background subtraction. [Homography](https://docs.opencv.org/master/d9/dab/tutorial_homography.html) is used to map the area of the pointcloud you want to track onto a scaled rectangle with the same aspect ratio of the screen using OPENCV. Average depth is calculated as well as GPU calculated optical flow. The latter allows for optical flow use per pixel with transform feedback particle systems. In order to have flexibilty with where the projector goes as well, projection mapping is included via Paul Houx's [Cinder-Warping](https://github.com/paulhoux/Cinder-Warping) block. Orbbec Astra library is based on [ofxOrbbecAstra](https://github.com/mattfelsen/ofxOrbbecAstra). Opticalflow implementation is from somewher (I can't seem to find it now) on Andrew Benson's [website](https://pixlpa.com/). OSC is also included, but not used in the current example.
+A pointcloud from an Orbbec Astra is rotated to get the viewing angle needed to track, allowing the camera to be placed anywhere in a room (inspired by Kyle McDonald's [ofxVirtualkinect](https://github.com/kylemcdonald/ofxVirtualKinect)). A novel approach of getting unique thresholds for every pointcloud point allows a dynamic background subtraction. [Homography](https://docs.opencv.org/master/d9/dab/tutorial_homography.html) is used to map the area of the pointcloud you want to track onto a scaled rectangle with the same aspect ratio of the screen using OPENCV. Average depth is calculated as well as GPU calculated optical flow. The latter allows for optical flow use per pixel with transform feedback particle systems. In order to have flexibilty with where the projector goes as well, projection mapping is included via Paul Houx's [Cinder-Warping](https://github.com/paulhoux/Cinder-Warping) block. Orbbec Astra library is based on [ofxOrbbecAstra](https://github.com/mattfelsen/ofxOrbbecAstra). Opticalflow implementation is from somewhere on Andrew Benson's [website](https://pixlpa.com/) (I can't seem to find it now). OSC is also included, but not used in the current example.
 
 ## Setup
 
@@ -35,7 +35,7 @@ Hopefully this should compile and run without any hiccups. Please open an issue 
 
 ## Using this in your project
 
-If you're creating a new project, the easiest approach is to copy the example project, which is already set up with the correct header & linker paths. Otherwise you will need to set the following:
+If you're creating a new project, the easiest approach is to [copy](https://stackoverflow.com/questions/17744319/duplicate-and-rename-xcode-project-associated-folders#:~:text=Duplicating%20an%20Xcode%20Project&text=In%20Xcode%2C%20rename%20the%20project,any%20targets%20you%20may%20have.) the example project, which is already set up with the correct header & linker paths. Otherwise you will need to set the following:
 
 - add to **Header Search Paths**:
   - `../src/orbbecAstra/libs/astra/include`
