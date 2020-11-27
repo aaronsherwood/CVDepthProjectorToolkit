@@ -63,9 +63,30 @@ This has been tested with the following setup:
 - Orbbec Astra camera
 
 ## How To
-The app will detect if you have the detpth camera plugged in or not. If not, it will let you play with the visuals using the mouse. If it detects an Orbbec camera you will see something similar to the following. Counter clock wise from the bottom left we have the webcam image, the pointcloud inage, the cleaned image from the pointcloud, and the opticalflow texture from the GPU.
+The app will detect if you have the depth camera plugged in or not. If not, it will let you play with the visuals using the mouse. If it detects an Orbbec camera you will see something similar to the following. Counter clock wise from the bottom left we have the webcam image, the pointcloud inage, the cleaned image from the pointcloud, and the opticalflow texture from the GPU.
 
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/overview.png)
 
+First (if needing to projection map), edit the projection mapping points to match the area you want to track within.
 
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/map.gif)
+
+Next, using the params GUI menu, rotate and position the point cloud to get the desired viewing angle.
+
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/rotate.gif)
+
+Then set the homography rectangle to match your projection space in the pointcloud view. This saure is mapped, with the screen's aspect ratio, to the sqaure to the right, with blurring and thresholding, etc. done with OPENCV.
+
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif)
+
+Click Learn Background.
+
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif)
+
+The optical flow is shown in the bottom left.
+
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/flow.gif)
+
+Turn off debug mode and the optical flow will move the particles around.
 
 ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/bubbles.gif)
