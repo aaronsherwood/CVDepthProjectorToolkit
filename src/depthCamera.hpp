@@ -38,7 +38,7 @@ public:
     //CAMERA
     float mNearPlane, mFarPlane;
     float mBackgroundThreshold;
-    float mRotateX, mRotateY, mRotateZ, mZoom, mTranslateX, mTranslateY, mBlurAmount;
+    float mRotateX, mRotateY, mRotateZ, mZoom, mTranslateX, mTranslateY, mTranslateZ, mBlurAmount;
     bool mLearnBrackground = false;
     bool mDrawDepth = false;
     

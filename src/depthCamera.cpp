@@ -120,11 +120,11 @@ void DepthCamera::update(){
         float bottom = -240 * orthoScale;
         projection = glm::ortho(left, right, bottom, top, mNearPlane, mFarPlane);
         ci::gl::setProjectionMatrix(projection);
-        
+        ci::gl::translate(mTranslateX, mTranslateY, mTranslateZ);
         ci::gl::rotate(rotate( ci::toRadians( mRotateX ), ci::vec3(1,0,0)));
         ci::gl::rotate(rotate( ci::toRadians( mRotateY ), ci::vec3(0,1,0)));
         ci::gl::rotate(rotate( ci::toRadians( mRotateZ ), ci::vec3(0,0,1)));
-        ci::gl::translate(mTranslateX, mTranslateY, 0);
+        
         // render the point cloud and subtract background with the shader
         {
             ci::gl::ScopedGlslProg shader(mBackgroundShader);
@@ -232,11 +232,6 @@ void DepthCamera::update(){
 
 //--------------------------------------------------------------
 void DepthCamera::draw(){
-    // center things on screen
-    ci::gl::ScopedMatrices push;
-    float xTrans = (ci::app::getWindowWidth()-640*2)*.5;
-    ci::gl::translate(xTrans, 0, 0);
-    
     // draw the webcam
     mAstra.draw(640, 480);
     
@@ -284,7 +279,6 @@ void DepthCamera::draw(){
     if (mSettingNewPoints){
         drawPoints(mSrcPoints);
     }
-    
 }
 
 //--------------------------------------------------------------
@@ -373,6 +367,7 @@ void DepthCamera::loadSettings(){
         mZoom = xml.getAttributeValue<float>( "mZoom", 1);
         mTranslateX = xml.getAttributeValue<float>( "mTranslateX", 0);
         mTranslateY = xml.getAttributeValue<float>( "mTranslateY", 0);
+         mTranslateZ = xml.getAttributeValue<float>( "mTranslateZ", 0);
         mBlurAmount = xml.getAttributeValue<float>( "blurAmount", 50);
         mThreshold = xml.getAttributeValue<float>( "threshold", 15);
         
@@ -472,6 +467,7 @@ void DepthCamera::saveSettings(){
     warp.setAttribute( "mZoom", mZoom);
     warp.setAttribute( "mTranslateX", mTranslateX);
     warp.setAttribute( "mTranslateY", mTranslateY);
+    warp.setAttribute( "mTranslateZ", mTranslateZ);
     warp.setAttribute( "blurAmount", mBlurAmount);
     warp.setAttribute( "threshold", mThreshold);
     std::vector<ci::vec2>::const_iterator itr;

@@ -171,6 +171,7 @@ void virtualOrbbecAstraApp::setupParams()
     mParams->addParam( "Rotate Z", &mDepthCamera.mRotateZ ).step( 1.f );
     mParams->addParam( "Translate X", &mDepthCamera.mTranslateX ).step( 1.f);
     mParams->addParam( "Translate Y", &mDepthCamera.mTranslateY ).step( 1.f);
+    mParams->addParam( "Translate Z", &mDepthCamera.mTranslateZ ).step( 1.f);
     mParams->addParam( "Zoom", &mDepthCamera.mZoom ).step( 1.f );
     mParams->addSeparator();
     mParams->addText( "text4", "label=`Select the area of the point cloud that`" );
