@@ -71,24 +71,36 @@ The app will detect if you have the depth camera plugged in or not. If not, it w
 
 1. First (if needing to projection map), edit the projection mapping points to match the area you want to track within.
 
-&nbsp;![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/map.gif)
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/map.gif)
+<br/>
+<br/>
 
 2. Next, using the params GUI menu, rotate and position the point cloud to get the desired viewing angle.
 
-  ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/rotate.gif)
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/rotate.gif)
+<br/>
+<br/>
 
 3. Then set the homography rectangle to match your projection space in the pointcloud view. This saure is mapped, with the screen's aspect ratio, to the sqaure to the right, with blurring and thresholding, etc. done with OPENCV.
 
-  <img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" width="800" />
+<img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/setmap.gif" width="800" />
+<br/>
+<br/>
 
 4. Click *Learn Background* in the GUI memory to analyze the depth and set per point depth thresholds.
 
-  <img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" width="800" />
+<img src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" data-canonical-src="https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/nobackground.gif" width="800" />
+<br/>
+<br/>
 
 5. The optical flow is shown in the bottom left.
 
-  ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/flow.gif)
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/flow.gif)
+<br/>
+<br/>
 
 6. Turn off debug mode and the optical flow will move the particles around.
 
-  ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/bubbles.gif)
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/bubbles.gif)
+<br/>
+<br/>
