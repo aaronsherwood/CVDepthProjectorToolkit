@@ -67,7 +67,7 @@ This has been tested with the following setup:
 ## How To
 The app will detect if you have the depth camera plugged in or not. If not, it will let you play with the visuals using the mouse. If it detects an Orbbec camera you will see something similar to the following. Counter clock wise from the bottom right we have the webcam image, the pointcloud image, the cleaned/treated image from the pointcloud, and the opticalflow texture from the GPU.
 
-![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/overview2.png)
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/overviewcrop.png)
 1. First (if needing to projection map), edit the projection mapping points to match the area you want to track within.
 
 ![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/map.gif)
