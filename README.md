@@ -1,6 +1,8 @@
 # CVDepthProjectorToolkit
 
-This project pulls together many helpful pieces for tracking people with a depth camera, projecting on the ground (or wall), and aligning the visuals with where people are. It was originally created and used for [MICHI](http://aaron-sherwood.com/works/michi/). Built in Cinder.
+This project pulls together many helpful tools for tracking people with a depth camera, projecting on the ground (or wall), and aligning the visuals with where people are. It was originally created and used for [MICHI](http://aaron-sherwood.com/works/michi/). 
+
+![](https://github.com/aaronsherwood/CVDepthProjectorToolkit/blob/main/README_Images/michi.jpg)
 
 ## Quick Functionality Overview
 * Cinder
@@ -14,7 +16,7 @@ This project pulls together many helpful pieces for tracking people with a depth
 
 ### More Info
 
-A pointcloud is used from an Orbbec Astra depth camera, and, inspired by Kyle McDonald's ofxVirtualkinect, the depth camera can be placed anywhere. The pointcloud image is rotated to get the viewing angle needed to track. A novel approach of getting unique thresholds for every pointcloud point allows a dynamic background subtraction. [Homography] (https://docs.opencv.org/master/d9/dab/tutorial_homography.html) is used to map the area of the pointcloud you want to track onto a scaled rectangle with the same aspect ratio of the screen using OPENCV. Average depth is calculated as well as GPU calculated optical flow. The latter allows for optical flow use per pixel with transform feedback particle systems. In order to have flexibilty with where the projector goes as well projection mapping is included via Paul Houx's [Cinder-Warping](https://github.com/paulhoux/Cinder-Warping) block. Orbbec Astra library is based on [ofxOrbbecAstra](https://github.com/mattfelsen/ofxOrbbecAstra). OSC is also included, but not used in the current example.
+A pointcloud is used from an Orbbec Astra depth camera, and, inspired by Kyle McDonald's [ofxVirtualkinect](https://github.com/kylemcdonald/ofxVirtualKinect), the depth camera can be placed anywhere. The pointcloud image is rotated to get the viewing angle needed to track. A novel approach of getting unique thresholds for every pointcloud point allows a dynamic background subtraction. [Homography] (https://docs.opencv.org/master/d9/dab/tutorial_homography.html) is used to map the area of the pointcloud you want to track onto a scaled rectangle with the same aspect ratio of the screen using OPENCV. Average depth is calculated as well as GPU calculated optical flow. The latter allows for optical flow use per pixel with transform feedback particle systems. In order to have flexibilty with where the projector goes as well projection mapping is included via Paul Houx's [Cinder-Warping](https://github.com/paulhoux/Cinder-Warping) block. Orbbec Astra library is based on [ofxOrbbecAstra](https://github.com/mattfelsen/ofxOrbbecAstra). OSC is also included, but not used in the current example.
 
 ## Setup
 
