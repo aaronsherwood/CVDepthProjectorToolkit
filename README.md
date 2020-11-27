@@ -52,7 +52,7 @@ Note: this assumes your project folder is inside your samples folder, e.g. `cind
 These are all included, but if making a new project you will need the following:
 * [Cinder-OPENCV](https://github.com/cinder/Cinder-OpenCV)
 * [Cinder-Warping](https://github.com/paulhoux/Cinder-Warping)
-* OSC cinder block (included in Cinder)
+* OSC cinder block (included in cinder)
 
 ## Support
 
