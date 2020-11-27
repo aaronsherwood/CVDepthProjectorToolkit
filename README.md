@@ -1,1 +1,1 @@
-# CVProjectorToolkit
+# CVDepthProjectorToolkit
