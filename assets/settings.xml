@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config version="1.1" profile="default">
-	<warp width="640" height="480" mNearPlane="0" mFarPlane="8000" mBackgroundThreshold="0.0074" mRotateX="180" mRotateY="0" mRotateZ="0" mZoom="1" mTranslateX="0" mTranslateY="0" mTranslateZ="-1000" blurAmount="50" threshold="15">
+	<warp width="640" height="480" mNearPlane="0" mFarPlane="8000" mBackgroundThreshold="0.0074" mRotateX="180" mRotateY="0" mRotateZ="0" mZoom="1" mTranslateX="0" mTranslateY="0" blurAmount="50" threshold="15">
 		<control-point x="14" y="78"/>
 		<control-point x="633" y="67"/>
 		<control-point x="633" y="473"/>

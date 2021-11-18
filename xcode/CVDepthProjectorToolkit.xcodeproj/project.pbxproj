@@ -16,6 +16,8 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		0AD32524274681EC00BD71C8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD32523274681EC00BD71C8 /* assets */; };
+		0AD32526274682A100BD71C8 /* osx in Resources */ = {isa = PBXBuildFile; fileRef = 0AD32525274682A100BD71C8 /* osx */; };
 		0ADFCFB224AB9B9100CDF683 /* WarpBilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFCFAE24AB9B9000CDF683 /* WarpBilinear.cpp */; };
 		0ADFCFB324AB9B9100CDF683 /* WarpPerspectiveBilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFCFAF24AB9B9000CDF683 /* WarpPerspectiveBilinear.cpp */; };
 		0ADFCFB424AB9B9100CDF683 /* WarpPerspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFCFB024AB9B9000CDF683 /* WarpPerspective.cpp */; };
@@ -59,6 +61,8 @@
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 		0AACF554256FA6540088CF1A /* CVDepthProjectorToolkit.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CVDepthProjectorToolkit.entitlements; sourceTree = "<group>"; };
+		0AD32523274681EC00BD71C8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
+		0AD32525274682A100BD71C8 /* osx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = osx; path = ../src/orbbecAstra/libs/astra/lib/osx; sourceTree = "<group>"; };
 		0ADFCFAC24AB9B9000CDF683 /* Warp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warp.h; sourceTree = "<group>"; };
 		0ADFCFAE24AB9B9000CDF683 /* WarpBilinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WarpBilinear.cpp; sourceTree = "<group>"; };
 		0ADFCFAF24AB9B9000CDF683 /* WarpPerspectiveBilinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WarpPerspectiveBilinear.cpp; sourceTree = "<group>"; };
@@ -649,6 +653,8 @@
 			isa = PBXGroup;
 			children = (
 				0AACF554256FA6540088CF1A /* CVDepthProjectorToolkit.entitlements */,
+				0AD32525274682A100BD71C8 /* osx */,
+				0AD32523274681EC00BD71C8 /* assets */,
 				01B97315FEAEA392516A2CEA /* Blocks */,
 				29B97315FDCFA39411CA2CEA /* Headers */,
 				080E96DDFE201D6D7F000001 /* Source */,
@@ -775,8 +781,10 @@
 			files = (
 				0ADFD0FC24ABE49900CDF683 /* orbbec_hand.toml in Resources */,
 				0E40F153146E48B4AADF43BE /* CinderApp.icns in Resources */,
+				0AD32524274681EC00BD71C8 /* assets in Resources */,
 				0ADFD10324ABE49900CDF683 /* orbbec.ini in Resources */,
 				8AD6319921D352F20098B649 /* shaders in Resources */,
+				0AD32526274682A100BD71C8 /* osx in Resources */,
 				0ADFD10024ABE49900CDF683 /* OpenNI.ini in Resources */,
 				0ADFD10524ABE49900CDF683 /* astra.toml in Resources */,
 			);
@@ -826,7 +834,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LD_RUNPATH_SEARCH_PATHS = "$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @executable_path/../../../../../../src/orbbecAstra/libs/astra/lib/osx/";
+				LD_RUNPATH_SEARCH_PATHS = "$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @executable_path/../Resources/osx/";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
@@ -849,6 +857,9 @@
 					../blocks/OpenCV/lib/macosx/libopencv_ts.a,
 					../blocks/OpenCV/lib/macosx/libopencv_video.a,
 					../blocks/OpenCV/lib/macosx/libopencv_videostab.a,
+					../src/orbbecAstra/libs/astra/lib/osx/libAstra.dylib,
+					../src/orbbecAstra/libs/astra/lib/osx/libastra_core.dylib,
+					../src/orbbecAstra/libs/astra/lib/osx/libastra_core_api.dylib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CVDepthProjectorToolkit;
@@ -880,8 +891,9 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LD_RUNPATH_SEARCH_PATHS = "$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @executable_path/../../../../../../src/orbbecAstra/libs/astra/lib/osx/";
+				LD_RUNPATH_SEARCH_PATHS = "$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @executable_path/../Resources/osx/";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
